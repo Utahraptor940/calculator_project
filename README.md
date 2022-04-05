@@ -1,50 +1,37 @@
-## Amazing Hello World App
+## Basic Calculator  
 
-1. Do not forget to use the virtual python env:
+This calculator will help you to perform necessary operations with numbers right on your console.
 
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   ```
+Supports four types of calculation: 
+1. Addition
+2. Subtraction
+3. A division  
+4. Multiplication
 
-2. Instal the dependencies:
 
-   ```bash
-   pip install -r requirements.txt;
-   pip install -r test_requirements.txt;
-   ``` 
+## Run the program:
+ The command below will use the virtual python env, install the dependencies and start the program.    
+ 
+ 
+    make run
+1. Choose the type of calculation.
 
-3. Check whether the app works, start it, and use `curl` to call the app web api:
+2. Input two numbers.
 
-   ```bash
-   PYTHONPATH=. FLASK_APP=hello_world flask run
-   ```
+3. Close the program after getting the result, or make another calculation.
 
-   ```bash
-   curl 127.0.0.1:5000
-   ```
 
-   ```bash
-   curl 127.0.0.1:5000/outputs
-   ```
+## Run tests:
+To install the dependencies for the tests run the command below
 
-   ```bash
-   curl '127.0.0.1:5000/?output=json'
-   ```
+    make setup
+To execure tests run another command
 
-3. What is the code without tests:
+    make test
 
-   ```bash
-   PYTHONPATH=. py.test  --verbose -s
-   ```
 
-4. Let's lint our code:
 
-   ```bash
-   flake8 hello_world test main.py
-   ```
-
-5. Place for your notes:
-
-   ```bash
-   ```
+## Clean
+    make clean
+    
+This command will  delete __pycache__ folder and venv directory.
