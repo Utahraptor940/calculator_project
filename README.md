@@ -1,11 +1,11 @@
 ## Basic Calculator  
 
-This calculator will help you to perform necessary operations with numbers right on your console.
+This calculator will help you to perform necessary operations with numbers in your terminal.
 
 Supports four types of calculation: 
 1. Addition
 2. Subtraction
-3. A division  
+3. Division  
 4. Multiplication
 
 
@@ -25,7 +25,7 @@ Supports four types of calculation:
 To install the dependencies for the tests run the command below
 
     make setup
-To execure tests run another command
+To execute tests run another command
 
     make test
 
